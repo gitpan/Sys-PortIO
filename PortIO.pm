@@ -1,5 +1,5 @@
 # ======================================================================
-# $Id: PortIO.pm,v 1.2 2005/02/26 22:18:12 andrew Exp $
+# $Id: PortIO.pm,v 1.3 2005/03/05 06:45:56 andrew Exp $
 
 =head1 NAME
 
@@ -76,7 +76,7 @@ use AutoLoader qw(AUTOLOAD);
 our @ISA = qw(Exporter);
 our @EXPORT_OK = qw(port_open read_byte write_byte port_close);
 our @EXPORT = @EXPORT_OK;
-our $VERSION = '0.01';
+our $VERSION = '0.1';
 
 require XSLoader;
 XSLoader::load('Sys::PortIO' => $VERSION);
